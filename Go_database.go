@@ -22,12 +22,12 @@ func main() {
 	}
 	defer db.Close()
 	// Insert data into table
-	/*insert, err := db.Query("INSERT INTO students(ID,Name,Age,Address) VALUES('11','Sameer','30','Mumbai')")
+	insert, err := db.Query("INSERT INTO students(ID,Name,Age,Address) VALUES('11','Sameer','30','Mumbai')")
 
 	if err != nil {
 		panic(err.Error())
 	}
-	insert.Close()*/
+	insert.Close()
 
 	// Get data from database
 	result, err := db.Query("SELECT ID,Name,Age,Address FROM students")
