@@ -16,7 +16,7 @@ type Students struct {
 
 func main() {
 	// Connecting Database using Go Lang
-	db, err := sql.Open("mysql", "root:Sal@12345678@tcp(127.0.0.1:3306)/student")
+	db, err := sql.Open("mysql", "root:paasword@tcp(127.0.0.1:3306)/dbname")
 	if err != nil {
 		panic(err.Error())
 	}
